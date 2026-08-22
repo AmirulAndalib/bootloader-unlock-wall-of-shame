@@ -26,7 +26,7 @@ While this may not affect you directly, it sets a bad precedent. You never know 
 
 I thought it might be a good idea to keep track of bad companies and workarounds.
 
-If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions)
+If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
 
 # The list:
 
