@@ -14,7 +14,7 @@ __This will not work__ for __Honor 50 devices__ as both Honor and Huawei __don't
 
 ***
 Authored by [Ivy/Lost-Entrepreneur439](https://github.com/lost-entrepreneur439).
-EMUI Method found by [ArchLuky](https://github.com/ArchLuky), written by [xblade720/OmegaStator](https://github.com/OmegaStator)
+EMUI Method found by [ArchLuky](https://github.com/ArchLuky), written by [xblade720/OmegaStator](https://github.com/OmegaStator).
 
 [PotatoNV]:../../README.md#kirin
 [fake unlock]:https://xdaforums.com/t/unlock-honor-50-bootloader.4495577/
