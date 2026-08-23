@@ -20,9 +20,9 @@ Most carrier branded LG devices (aside from T-Mobile branded devices made before
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.
 
 ## Unofficial methods
-Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs, some of their devices with Qualcomm SoCs have leaked [engineering bootloaders][SDM845 ENG Boot] available, for example the LG G7.
+Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs and Devinfo (for some Qualcomm SoCs), some of their devices with Qualcomm SoCs have leaked [engineering bootloaders][SDM845 ENG Boot] available, for example the LG G7.
 
-There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) that allow bootloader unlock as well.
+There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) and [this][V30 bootloader unlock exploit] that allow bootloader unlock as well.
 
 
 ***
@@ -41,5 +41,7 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 [USC Fastboot commands removed]:https://xdaforums.com/t/lg-v30-v30-v30s-bootloader-unlock-root-method-with-clear-instructions.3790500/post-76573357
 
 [Working example]:https://xdaforums.com/t/rle888-bootloader-unlock-exploit-for-the-lg-g5.4792237/
+
+[V30 bootloader unlock exploit]:https://xdaforums.com/t/lg-v30-v30-v30s-bootloader-unlock-root-method-with-clear-instructions.3790500/
 
 [SDM845 ENG Boot]:https://xdaforums.com/t/guide-guide-to-unlock-bootloader-for-every-lg-sdm845-except-g710tm-with-photos.4168771/
