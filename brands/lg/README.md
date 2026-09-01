@@ -6,7 +6,7 @@
 
 In the past, LG had a developer portal which could be used to unlock phones on their website, however it only supported **some** international models of their phones, but in December 2021, LG [announced][announcement-archive] the developer portal would be shutting down due to LG ending production of all phones. Unisoc devices will never be unlockable, this is *not* LG's fault, Unisoc does not officially support unlocking.
 
-On some models (such as the Stylo 3 Plus and G6), the bootloader can still be officially unlocked via `fastboot oem unlock` **only if** [the phone is a T-Mobile model][t-mobile-unlock]. T-Mobile versions also have most fastboot commands removed, including `fastboot flash`, `erase` and `boot`, since the [LG V10 on Android 6][TMO Fastboot commands removed]. Additionally, some [non T-Mobile branded LG devices][USC Fastboot commands removed] also have `fastboot boot`, `flash` and/or `boot` removed as well.
+On some models (such as the Stylo 3 Plus and G6), the bootloader can still be officially unlocked via `fastboot oem unlock` **only if** [the phone is a T-Mobile model][t-mobile-unlock]. T-Mobile versions also have most fastboot commands removed, including `fastboot flash`, `erase` and `boot`, since the [LG V10 on Android 6][TMO Fastboot commands removed]. Additionally, some [non T-Mobile branded LG devices][Fastboot commands removed unb] [(example 2)][USC Fastboot commands removed] also have `fastboot boot`, `flash` and/or `boot` removed as well.
 
 Older devices (prior to 2015) do not have partition verification (on operating system versions made prior to 2015) and assuming you have a root exploit, you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides].
 
@@ -39,6 +39,8 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 [TMO Fastboot commands removed]:https://xdaforums.com/t/v10-bootloop-fix-lengthens-life.3694064/post-74461372
 
 [USC Fastboot commands removed]:https://xdaforums.com/t/lg-v30-v30-v30s-bootloader-unlock-root-method-with-clear-instructions.3790500/post-76573357
+
+[Fastboot commands removed unb]:https://xdaforums.com/t/recovery-official-f500-ls991-h81x-us991-vs986-a7-a9-twrp-2020-06-22.3442424/post-73830593
 
 [Working example]:https://xdaforums.com/t/rle888-bootloader-unlock-exploit-for-the-lg-g5.4792237/
 
