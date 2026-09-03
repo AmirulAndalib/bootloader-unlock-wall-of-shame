@@ -11,7 +11,7 @@ Amazon — странная компания в мире Android. Они цеп�
 ## MediaTek
 **Более старые устройства на MediaTek можно разблокировать с помощью [amonet]** — эксплойта загрузчика/bootROM, [изначально разработанного в 2019 году для разблокировки Amazon Fire HD 8 (2018)].
 
-Последние устройства, разблокированные с помощью amonet: Fire TV Stick 3rd Gen и Fire TV Stick Lite 1st Gen (выпущены около 2020 года).
+Последние устройства, разблокированные с помощью amonet: серия Fire TV Stick 4K 2nd Gen (выпущена в 2023 году).
 
 Однако **Amazon активно патчила этот эксплойт**, так что даже если порт amonet существует для вашего устройства, оно всё равно может быть неразблокируемым.
 
@@ -33,6 +33,7 @@ Amazon — странная компания в мире Android. Они цеп�
 - [Amazon Echo Show 5 2nd Gen (2021)]: Большинство (и последние) версий поддерживаются; Amazon не патчила это устройство.
 - [Amazon Fire HD 10 (2019)]: Доступен только временный, привязанный эксплойт. Amazon отключила **DL-Mode** в **bootROM** на всех новых ревизиях железа, так что только ранние партии могут использовать этот метод.
 - [Amazon Fire TV Stick 3 and Fire TV Stick Lite (2020)]: Amazon пропатчила эксплойт в **FireOS 7.2.7.3**. Существует [аппаратный способ отката устройства до поддерживаемой версии], но он требует пайки и не рекомендуется неопытным пользователям.
+- [Серия Amazon Fire TV Stick 4K 2nd Gen (2023 ~ 2025)]: Amazon ещё не пропатчила эксплойт, но ожидается, что это произойдёт в ближайшие месяцы. Касается Fire TV Stick 4K 2nd Gen, Fire TV Stick 4K Max 2nd Gen и Fire TV Stick 4K Plus 2nd Gen.
 
 ## Qualcomm
 
@@ -50,7 +51,7 @@ Amazon — странная компания в мире Android. Они цеп�
 
 ## Заключение
 
-На момент написания **неизвестны эксплойты для разблокировки загрузчика устройств Amazon, выпущенных после 2020 года.**
+На момент написания самые новые устройства Amazon с публичной разблокировкой загрузчика — **серия Fire TV Stick 4K 2nd Gen (2023)**, и даже там разблокировка зависит от root-эксплойта, который Amazon, как ожидается, пропатчит. **Эксплойтов для более новых устройств Amazon неизвестно.**
 
 Было несколько сообщений о пользователях, [покупающих инженерные образцы] у сторонних продавцов, но прошивки на этих устройствах бесполезны для серийных устройств.
 
@@ -77,6 +78,7 @@ Amazon — странная компания в мире Android. Они цеп�
 [Amazon Fire TV Stick 4K 1st Gen (2018)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-mantis.3978459/
 [Amazon Fire HD 10 (2019)]:https://xdaforums.com/t/new-fire-hd10-2019-bootless-root-method-bootloader-unlock-brainstorming.3979343/page-40#post-86371571
 [Amazon Fire TV Stick 3 and Fire TV Stick Lite (2020)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-3-and-fire-tv-stick-lite-sheldon-p.4410297/
+[Серия Amazon Fire TV Stick 4K 2nd Gen (2023 ~ 2025)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/
 [hardware way to downgrade the device to a supported version]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-3-and-fire-tv-stick-lite-sheldon-p.4410297/page-47#post-89960237
 [Fire TV Cube 1st Gen (2018) / Fire TV Pendant (2017)]:https://xdaforums.com/t/root-rooting-the-firetv-cube-and-pendant-with-firefu.3861272/
 [Fire TV Cube 2nd Gen (2019)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-firetv-2nd-gen-cube-raven-ps7242.4445971/

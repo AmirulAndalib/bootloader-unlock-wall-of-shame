@@ -23,9 +23,10 @@ Over the past few years, a suspicious number of companies have started to "take 
 
 While this may not affect you directly, it sets a bad precedent. You never know what will get the axe next: Shizuku? ADB?<br><br> 
 **They've already gone after [sideloading](https://keepandroidopen.org).**<br><br>
+
 I thought it might be a good idea to keep track of bad companies and workarounds.
 
-If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions)
+If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
 
 # The list:
 
@@ -106,7 +107,7 @@ The following manufacturers allow unlocking under certain conditions, such as re
 
 ## ⚠️ Proceed with caution!
 
-The following manufacturers require an online account and/or a waiting period before unlocking.
+The following manufacturers require an internet connection and/or a waiting period before unlocking.
 
 ### [Fairphone](./brands/fairphone/README.md)
 
@@ -176,7 +177,7 @@ If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG
 
 On Snapdragon 8E5/8E, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitary code.
 
-While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite).
+While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite8gen38gen28gen1).
 
 #### Other
 
@@ -186,7 +187,7 @@ The general exploit:<br/>
 ### Unisoc
 If you own a phone with the Unisoc UMS9620 or older you can use [this](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) (UMS9621 need [this](https://github.com/TomKing062/exec_addr_v2) as exec address) to achieve temporary secure boot bypass and persistently unlock bootloader. This is valid for all devices except some devices with [modified uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk) which need [this](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit) or [this](https://github.com/YC-nw/bsp_sign_fxxker) or [this](https://github.com/kasnria001/unisoc_secure_boot_bypass), note that the method used on all these three links is the same but implemented by different people and with possible differences, also by using this aside from bootloader unlock is possible to completely disable dm-verity by patching trustos partition which would allow booting of unsigned partitions.
 
-If you own a phone with the Unisoc UMS312 UMS512 UD710,you can use [this](https://github.com/TomKing062/CVE-2022-38691_38692) exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned.
+If you own a phone with the Unisoc UMS312, UMS512, or UD710, you can use [this](https://github.com/TomKing062/CVE-2022-38691_38692) exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned.
 
 Otherwise, you can also look into this: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool) <br/>
 This: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) <br/>
