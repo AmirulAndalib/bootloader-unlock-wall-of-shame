@@ -6,7 +6,7 @@
 
 Раньше у LG был портал для разработчиков, где можно было разблокировать телефоны, но он поддерживал только **некоторые** международные модели. В декабре 2021 LG [объявила][announcement-archive] о закрытии портала из-за прекращения производства телефонов. Устройства на Unisoc никогда не будут разблокируемы — это *не* вина LG, Unisoc официально не поддерживает разблокировку.
 
-На некоторых моделях (таких как Stylo 3 Plus и G6) загрузчик всё ещё можно официально разблокировать через `fastboot oem unlock`, **только если [телефон от T-Mobile][t-mobile-unlock]**. Версии T-Mobile также имеют удалённые большинство команд fastboot, включая `fastboot flash`, `erase` и `boot`, начиная с [LG V10 на Android 6][TMO Fastboot commands removed]. Кроме того, на некоторых [не-T-Mobile устройствах LG][USC Fastboot commands removed] также удалены `fastboot boot`, `flash` и/или `boot`.
+На некоторых моделях (таких как Stylo 3 Plus и G6) загрузчик всё ещё можно официально разблокировать через `fastboot oem unlock`, **только если [телефон от T-Mobile][t-mobile-unlock]**. Версии T-Mobile также имеют удалённые большинство команд fastboot, включая `fastboot flash`, `erase` и `boot`, начиная с [LG V10 на Android 6][TMO Fastboot commands removed]. Кроме того, на некоторых [не-T-Mobile устройствах LG][Fastboot commands removed INT] [(пример 2)][USC Fastboot commands removed] также удалены `fastboot boot`, `flash` и/или `erase`.
 
 Старые устройства (до 2015) не имеют проверки разделов (на версиях ОС, выпущенных до 2015) — при наличии root-эксплойта можно просто прошить модифицированные разделы через dd, как рекомендуется в некоторых официальных [инструкциях][install guides] LineageOS.
 
@@ -17,7 +17,7 @@
 Большинство устройств LG под оператора (кроме устройств T-Mobile, выпущенных до 2018) также обычно имеют скрытый Fastboot.
 
 ## Часы
-Все часы LG на Android Wear/Wear OS используют [стандартную процедуру разблокировки](../../../misc/generic-unlock.md) через fastboot.
+Все часы LG на Android Wear/Wear OS используют [стандартную процедуру разблокировки](../../misc/generic-unlock.md) через fastboot.
 
 ## Неофициальные методы
 Помимо общих неофициальных методов для устройств на MediaTek, Unisoc и Devinfo (для некоторых Qualcomm SoC), на некоторых устройствах с Qualcomm SoC доступны утёкшие [инженерные загрузчики][SDM845 ENG Boot], например для LG G7.
@@ -39,6 +39,8 @@
 [TMO Fastboot commands removed]:https://xdaforums.com/t/v10-bootloop-fix-lengthens-life.3694064/post-74461372
 
 [USC Fastboot commands removed]:https://xdaforums.com/t/lg-v30-v30-v30s-bootloader-unlock-root-method-with-clear-instructions.3790500/post-76573357
+
+[Fastboot commands removed INT]:https://xdaforums.com/t/recovery-official-f500-ls991-h81x-us991-vs986-a7-a9-twrp-2020-06-22.3442424/post-73830593
 
 [Рабочий пример]:https://xdaforums.com/t/rle888-bootloader-unlock-exploit-for-the-lg-g5.4792237/
 
