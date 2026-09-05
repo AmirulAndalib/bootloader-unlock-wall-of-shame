@@ -5,7 +5,17 @@
 - Verdict: **🍅 Just terrible!**
 - Verdict: **⛔ Avoid at all costs!** (Unisoc)
 
-Snapdragon-based nubia devices can be unlocked with the Fastboot command `fastboot oem nubia_unlock NUBIA_MODEL` (e.g. -- if your phone's model number is NX609J, the command would be `fastboot oem nubia_unlock NUBIA_NX609J`.). Newer ZTE devices can also be unlocked with the standard `fastboot flashing unlock` command, but this tends to break the fingerprint sensor, Unisoc devices will never be unlockable, this is *not* ZTE's fault, Unisoc does not allow unlocking. As for non-nubia ZTE devices:
+## Newer devices (Snapdragon 8850/8750) 
+Newer Snapdragon devices are unlockable with an exploit, including Redmagic 11 and 10, Nubia Z80 and Z70 series, and perhaps a few more (exact list unclear). Some devices require a certain security patch, while others done. https://xdaforums.com/t/red-magic-11-pro-guide-bootloader-unlock-free-also-support-rm10-pad3pro-z70u-z80u-unlock-zte-family-toolbox.4780930/. However, the developer has recently come under scrutiny, so it's unlikely that future devices will be supported (RM12, Z90, etc.)
+
+Unlocking often breaks the fingerprint sensor, but there is a bypass for some devices provided.
+
+Unisoc devices will never be unlockable, this is *not* ZTE's fault, Unisoc does not allow unlocking.
+
+## Older devices
+Snapdragon-based nubia devices can be unlocked with the Fastboot command `fastboot oem nubia_unlock NUBIA_MODEL` (e.g. -- if your phone's model number is NX609J, the command would be `fastboot oem nubia_unlock NUBIA_NX609J`.). ZTE devices can also be unlocked with the standard `fastboot flashing unlock` command.
+
+As for non-nubia ZTE devices:
 
 Old devices (pre Android 8):<br/>
 [xdaforums.com][pre-android-8]
